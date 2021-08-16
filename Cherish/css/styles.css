@@ -1,0 +1,21 @@
+body{
+    background-color: sienna;
+    color: cyan;
+}
+h1{
+    color: #FF6B6B;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 12px;
+    border-color: white;
+    width: 30%;
+}
+.hello{
+    background-color: pink;
+}
+.glass{
+    background-color: purple;
+    border-radius: 100%;
+}
