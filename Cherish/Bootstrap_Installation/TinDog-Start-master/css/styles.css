@@ -8,7 +8,7 @@ h1{
     line-height: 3;
 }
 .container-fluid{
-    padding: 3% 15% !important;
+    padding: 3% 15% 12% !important;
 }
 /* body {
     font-family: 'Montserrat', sans-serif !important;
@@ -30,9 +30,13 @@ h1{
 .dog-image{
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 #features{
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
 }
 .feature-box{
     text-align: center;
@@ -47,4 +51,71 @@ p{
 .icon{
     color: #ff4c68;
     margin-bottom: 12px;
+}
+#testimonials{
+    text-align: center;
+    background-color: #ff4c68;
+    color: white;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+.testimonial-dog{
+    width: 25%;
+    border-radius: 100%;
+    margin: 10px;
+}
+#press{
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-img{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+#pricing{
+    padding: 100px;
+}
+.pricing-col{
+    padding: 3% 2%;
+    text-align:center;
+}
+@media (max-width: 1028px){
+    #title{
+        text-align:center;
+    }
+    .dog-image{
+        position: static;
+        transform: rotate(0);
+        margin-top: 10%;
+    }
+}
+.Action{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+#cta{
+    background-color: #ff4c68;
+    padding: 7% 15%;
+}
+.atc{
+    font-size: 40px;
+}
+#footer{
+    padding: 7% 15% 10% 15%;
+    text-align: center;
+}
+.ft{
+    padding: 15px 10px;
+    margin-bottom: 5px;
+}
+.th{
+    text-align: center;
 }
