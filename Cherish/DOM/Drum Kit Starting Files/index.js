@@ -1,10 +1,8 @@
 var size=document.querySelectorAll(".drum").length;
 for(var i=0;i<size;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click",function (){
-        // var audio=new Audio('sounds/tom-1.mp3');
-        // audio.play();
-        // this.style.color="black";
         var buttoninnerHTML=this.innerHTML;
+        buttonAnimation(buttoninnerHTML);
         switch(buttoninnerHTML){
             case 'w':
                 var tom1=new Audio("sounds/tom-1.mp3");
@@ -38,4 +36,12 @@ for(var i=0;i<size;i++){
                 console.log(buttoninnerHTML);    
         }
     });
+}
+
+function buttonAnimation(currentKey){
+    var activeButton=document.querySelector("."+currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function (){
+        activeButton.classList.remove("pressed");
+    },100);
 }
