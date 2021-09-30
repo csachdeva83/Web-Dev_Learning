@@ -34,18 +34,18 @@ app.post('/',function(req,res){
 
     const jsonData=JSON.stringify(data);
 
-    const url="https://us5.api.mailchimp.com/3.0/lists/afc9fb0bea" //Error in us5
+    const url="https://us5.api.mailchimp.com/3.0/lists/afc9fb0bea";
  
     const options={
         method: "POST",
         auth: "cherish16 : 90368ec91637e513088e61ae69f41a33-us5"
-    }
+    };
     
     const request= https.request(url,options,function(response){
         response.on("data",function(data){
             console.log(JSON.parse(data));
-        })
-    })
+        });
+    });
 
     request.write(jsonData);
     request.end();
@@ -60,3 +60,4 @@ app.listen(3000,function(){
 
 // 90368ec91637e513088e61ae69f41a33-us5  API KEY
 // afc9fb0bea    List Id
+
