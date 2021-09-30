@@ -7,6 +7,16 @@
     <title>To Do List</title>
 </head>
 <body>
-    <h1>It's a <%= day %>!</h1>
+    <h1><%- kindofDay %></h1>
+    <ul>
+        <li>Buy Food</li>
+        <li>Cook Food</li>
+        <li>Eat Food</li>
+    </ul>
+
+    <form action="/" method="POST">
+        <input type="text" name="newItem">
+        <button type="submit" name="button">Add</button>
+    </form>
 </body>
 </html>
