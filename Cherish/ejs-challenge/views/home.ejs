@@ -3,4 +3,9 @@
 <h1>Home</h1>
 <p><%- hsc %> </p>
 
+<%newPostItems.forEach(function(element){%>
+    <h1><%- element.title %></h1>
+    <p><%- element.post_body.substring(0,100)+"...." %><a href="/posts/<%- element.title %> >">Read More</a></p>
+<%});%>
+
 <%- include("partials/footer") -%> 
